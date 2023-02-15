@@ -1,2 +1,2 @@
-# ecoleta-rocktseat
+# Ecoleta Rocktseat
 Marktplace de Coleta de Resíduos
