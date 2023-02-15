@@ -11,8 +11,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <title>Ecoleta</title>
+    <style>
+    </style>
 </head>
 
 <body>
@@ -25,15 +27,33 @@
             </header>
 
             <main>
-            <h1>Seu Marktplace de coleta de resíduos </h1>
-            <p>
-                Ajudamos pessoas a encontrar pontos de coleta de forma eficiente.
-            </p>
+                <h1>Seu Marktplace de coleta de resíduos </h1>
+                <p>
+                    Ajudamos pessoas a encontrar pontos de coleta de forma eficiente.
+                </p>
 
-            <a href=""><span></span> <strong> Pesquisar pontos de coleta </strong></a>
-        </main>
+                <a href="#" onclick="Modal.open()"><span></span> <strong> Pesquisar pontos de coleta
+                    </strong></a>
+            </main>
         </div>
     </div>
+
+    <div class="modal-overlay" onclick="Modal.close()">
+        <div id="card-form">
+            <div id="form-coleta">
+                <h1>Pontos de Coleta</h1>
+                <form action="">
+                    <input type="text" placeholder="Digite a cidade">
+                    <input type="text" placeholder="Digite o estado">
+                    <button>Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js" defer type="text/javascript">
+
+    </script>
 </body>
 
 </html>

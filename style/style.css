@@ -146,3 +146,67 @@ header{
         align-items: center;
     }
 }
+
+.modal-overlay{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.93);
+}
+
+.modal-overlay.active{
+        opacity: 1;
+        visibility: visible;
+}
+.modal-overlay h1{
+    color: #fff;
+    margin-bottom: 28px;
+    font-size: 38px;
+}
+
+#card-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-coleta{
+    width: 400px;
+    text-align: center;
+}
+
+#form-coleta form input, button{
+    min-width: 400px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#form-coleta form input{
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    color: var(--texts-sup);
+    
+}
+
+#form-coleta form button{
+    background-color: var(--greenpeace);
+    color: var(--blocks);
+    font-size: 18px;
+    height: 58px;
+    font-weight: 600;
+}
+#form-coleta form button:hover{
+
+background-color: var(--hover-greenpeac);
+transition: 400ms;
+
+}
