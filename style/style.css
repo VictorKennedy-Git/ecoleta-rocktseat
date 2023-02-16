@@ -9,6 +9,7 @@
     --backgroun: #F0F0F5;
 }
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -28,7 +29,6 @@ h1, h2, h3, h4, h5, h6{
     color: var(--titles);
     font-family: 'Ubuntu', sans-serif;
 }
-
 header{
     margin-top: 40px;
     display: flex;
@@ -147,7 +147,7 @@ header{
     text-align: center;
 }
 
-#form-coleta form input, button{
+#form-coleta form input, #form-coleta button{
     min-width: 400px;
     height: 48px;
     border-radius: 8px;
