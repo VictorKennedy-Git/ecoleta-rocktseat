@@ -23,6 +23,7 @@ function cityEnable(change) {
         let url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${localStorage.getItem('id')}/municipios`
 
         fetch(url).then((res) => res.json()).then(cities => {
+            selectCity.innerHTML = "<option>Selecionar Cidade</option>"
             for (city of cities) {
                 selectCity.innerHTML += `<option value="${city.id}">${city.nome}</option>`
             }
