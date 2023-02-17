@@ -28,7 +28,6 @@ function cityEnable(change) {
                 selectCity.innerHTML += `<option value="${city.id}">${city.nome}</option>`
             }
     })
-    
 }
 
 populateUFs()
