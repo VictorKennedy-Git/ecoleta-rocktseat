@@ -10,15 +10,22 @@ function populateUFs() {
 
 }
 
-function cityEnable(change) {
+function cityEnable(change, event) {
     let selectCity = document.querySelector('select[name="city"]')
+   
 
         selectCity.disabled = false
 
         let disabledoption = document.querySelector('option[name="selecionar"]')
         disabledoption.setAttribute('disabled', true)
     
-     let idcity = change.target.value
+    const stateInput = document.querySelector('input[name=state]')
+    const indexOfSelectedState = change.target.selectedIndex
+    
+    stateInput.value = change.target.options[indexOfSelectedState].text
+
+    let idcity = change.target.value
+
         localStorage.setItem('id', idcity)
         let url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${localStorage.getItem('id')}/municipios`
 
