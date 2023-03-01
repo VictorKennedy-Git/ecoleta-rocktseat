@@ -114,3 +114,45 @@ form button:hover{
     background-color: var(--hover-greenpeac);
     transition: background-color 400ms;
 }
+
+form select[name="city"]{
+    content: "Selecione a Cidade";
+}
+
+.itens-grid {
+    display: grid;
+    list-style: none;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.itens-grid li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    height: 180px;
+    text-align: center;
+    background-color: var(--backgroun);
+
+    cursor: pointer;
+
+}
+
+.itens-grid li span{
+    color: var(--titles);
+}
+
+.itens-grid li.selected{
+    background-color: var(--desaturado);
+    border: 2px solid var(--hover-greenpeac);
+}
+
+.itens-grid li img, 
+.itens-grid li span{
+    pointer-events: none;
+}
